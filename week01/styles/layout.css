@@ -1,5 +1,78 @@
-header {
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
 }
 
+header,
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .header-content {
+    padding: 5px 0;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: black;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content and Aside */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+}
+
+aside {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 50px;
+}
+
+/* Add a placeholder icon if needed */
+footer::before {
+    content: '⚙️';
+    margin-right: 10px;
+}
