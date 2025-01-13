@@ -1,0 +1,115 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: "Sansita", sans-serif;  
+}  
+
+/* Header */  
+header {  
+    background-color: #36454f; /* Background color for header */  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    padding: 20px;  
+    width: 100%; /* Full width */  
+    color: white;
+}  
+
+/* Navigation */  
+nav {  
+    background-color: #000000; /* Background color for nav */  
+    width: 100%; /* Full width */  
+    margin: 0; /* No margin */  
+}  
+
+nav ul {  
+    list-style-type: none; /* Remove default list styles */  
+    display: flex; /* Use flexbox for layout */  
+    justify-content: space-between; /* Evenly distribute nav items */  
+    padding: 0; /* Remove default padding */  
+}  
+
+nav ul li {  
+    flex: 1; /* Each item can grow to fill the space */  
+    text-align: center; /* Center the text inside each item */  
+}  
+
+nav a {  
+    display: block;  
+    color: #fff;  
+    text-align: center;  
+    padding: 1rem; /* Padding for nav items */  
+    text-decoration: none; /* Remove underline from links */  
+}  
+
+nav a:hover {  
+    border: 1px solid #fff; /* Add border on hover */  
+}  
+
+.active {  
+    color: yellow; /* Highlight active link */  
+}
+/* Main Content */  
+main {  
+    max-width: 1200px; /* Set a maximum width */  
+    margin: 0 auto; /* Center the main element */  
+    padding: 20px; /* Add some padding */  
+}  
+
+/* Footer */  
+footer {  
+    background-color: #333; /* Background color for footer */  
+    color: white; /* Footer text color */  
+    padding: 10px; /* Padding for footer */  
+    text-align: center; /* Center text in footer */  
+    width: 100%; /* Full width */  
+}  
+
+/* Card Styles */  
+.card {  
+    background-color: #f9f9f9; /* Light background for the cards */  
+    border: 1px solid #e0e0e0; /* Light border */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 20px; /* Padding inside the cards */  
+    margin: 10px; /* Margin between cards */  
+    display: flex; /* Use flexbox for layout */  
+    flex-direction: column; /* Stack items vertically */  
+}  
+
+.card h2 {  
+    text-align: center;  
+    background-color: rgb(0, 183, 255);  
+    margin-bottom: 10px;  
+    border-radius: 5rem;  
+    padding: 5px;  
+}  
+
+.about-me,  
+.ghana {  
+    display: flex; /* Use flex for the sections */  
+    align-items: center; /* Center items vertically */  
+    justify-content:space-between; /* Space out items */  
+}  
+
+.about-me img {
+    margin-left: 55px;
+    width: 300px; /* Set a fixed width for the images */  
+} 
+
+
+.ghana img {  
+    margin-right: 55px;
+    width: 300px; /* Set a fixed width for the images */  
+    border-radius: 5px; /* Curved corners for images */  
+}  
+
+.about-me p,  
+.ghana p {  
+    flex: 1; /* Allow paragraph to take remaining space */  
+    margin: 5px; /* Uniform margin */  
+    text-align: center; /* Center text in the paragraph */  
+}
