@@ -130,11 +130,11 @@ footer {
 
 .card h2 {
     text-align: center;
-    background-color: #36454f;
+    background-color: #00BFFF;
     margin-bottom: 10px;
     border-radius: 5rem;
     padding: 10px;
-    color: rgba(255, 255, 255, 0.918);
+    color: black;
 }
 
 .about-me,
