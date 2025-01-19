@@ -87,7 +87,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* Ensure cards can grow */
-    gap: 20px;
+    gap: 50px;
     /* Gap between cards */
     padding: 20px;
     max-width: 840px;
