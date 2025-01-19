@@ -6,6 +6,10 @@
 
 body {
     font-family: "Sansita", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the body takes at least full viewport height */
 }
 
 /* Header */
@@ -14,90 +18,84 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     padding-top: 20px;
     width: 100%;
     color: white;
-}
-
-header,
-.card-container,
-footer {
-    max-width: 840px;
-    margin: 0 auto;
+    position: sticky;
+    /* Makes the header stick to the top */
+    top: 0;
+    /* Position it at the top */
+    z-index: 1000;
+    /* Ensure it stays above other content */
 }
 
 /* Navigation */
 nav {
     background-color: #000000;
-    /* Black background for the nav */
     width: 100%;
-    padding: 10px 0;
-    /* Adjust top and bottom padding */
+    height: 53px;
+    padding-bottom: 55px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
-    /* Display nav items in a row */
-    justify-content: center;
-    /* Center align the items */
+    justify-content: space-around;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
-    /* Space between nav items */
+    flex: 1;
+    text-align: center;
 }
 
 nav a {
+    display: block;
     color: #fff;
-    /* Default text color */
+    text-align: center;
+    padding: 1rem;
     text-decoration: none;
-    /* Remove underline */
-    padding: 5px 10px;
-    /* Additional padding for clickable area */
-    transition: color 0.3s;
-    /* Smooth transition for color change */
 }
 
 nav a:hover {
-    color: yellow;
-    /* Change color on hover */
+    border: 1px solid #fff;
 }
 
 .active {
     color: yellow;
-    /* Highlight active link */
 }
 
-/* Add a border-bottom for active links */
-nav a.active {
-    border-bottom: 2px solid yellow;
-    /* Adds an underline to the active link */
-}
-
-/* Main Container */
-.main-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-
-/* Main Content */
-.main-content {
-    flex: 3;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-/* Aside Content */
-.aside-content {
+/* Main Content Area */
+main {
     flex: 1;
-    background-color: #e0e0e0;
+    /* Allow main content to grow and fill space */
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Ensure cards can grow */
+    gap: 20px;
+    /* Gap between cards */
     padding: 20px;
+    max-width: 840px;
+    /* Maximum width for the card container */
+    width: 100%;
+    /* Full width */
+    margin: 0 auto;
+    /* Center it */
 }
 
 /* Footer */
@@ -109,18 +107,11 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: 20px;
+    position: relative;
+    /* Keep it at the bottom of the page */
 }
 
 /* Card Styles */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* Ensure cards can grow */
-    gap: 20px;
-    /* Gap between cards */
-    padding: 20px;
-}
-
 .card {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
@@ -139,11 +130,11 @@ footer {
 
 .card h2 {
     text-align: center;
-    background-color: #00BFFF;
+    background-color: #36454f;
     margin-bottom: 10px;
     border-radius: 5rem;
     padding: 10px;
-    color: rgba(0, 0, 0, 0.918);
+    color: rgba(255, 255, 255, 0.918);
 }
 
 .about-me,
@@ -182,5 +173,5 @@ footer {
     padding: 5px;
     /* Padding for text */
     flex-grow: 1;
-    /* Corrected to just a number */
+    /* Let paragraph take available space */
 }
