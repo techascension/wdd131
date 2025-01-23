@@ -14,7 +14,7 @@ body {
 
 /* Header */
 header {
-    background-color: #36454f;
+    background-color: #1E3A5F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #36454f;
+    background-color: #1E3A5F;
     /* Changed to match the header */
     color: white;
     padding: 10px;
