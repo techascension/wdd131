@@ -1,86 +1,87 @@
-/* Media Queries */
-@media (max-width: 600px) {
-    h1 {
-        text-align: left;
-    }
+/* Media Queries */  
+@media (max-width: 600px) {  
+    h1 {  
+        text-align: left;  
+    }  
 
-    nav ul {
-        display: none;
-        /* Hide the nav on mobile by default */
-    }
+    nav ul {  
+        display: none;  
+        /* Hide the nav on mobile by default */  
+    }  
 
-    #hamburger {
-        display: block;
-        /* Show hamburger icon on mobile */
-    }
+    #hamburger {  
+        display: block;  
+        /* Show hamburger icon on mobile */  
+    }  
 
-    /* Show the nav when the hamburger menu is active */
-    nav ul.show {
-        display: flex;
-        /* Show the nav links when hamburger is clicked */
-        flex-direction: column;
-        /* Stack links vertically */
-        width: 100%;
-        /* Full width for the dropdown */
-        background-color: purple;
-    }
+    /* Show the nav when the hamburger menu is active */  
+    nav ul.show {  
+        display: flex;  
+        /* Show the nav links when hamburger is clicked */  
+        flex-direction: column;  
+        /* Stack links vertically */  
+        width: 100%;  
+        /* Full width for the dropdown */  
+        background-color: purple;  
+    }  
 
-    nav ul li {
-        margin: 10px 0;
-        /* Space between vertical links */
-        text-align: center;
-    }
+    nav ul li {  
+        margin: 10px 0;  
+        /* Space between vertical links */  
+        text-align: center;  
+    }  
 
-    .grid-container {
-        grid-template-columns: 1fr;
-        /* Change to 1 column on mobile */
-    }
-}
+    .grid-container {  
+        grid-template-columns: 1fr;  
+        /* Change to 1 column on mobile */  
+    }  
+}  
 
-/* Styles for Expanded View */
-@media (min-width: 601px) {
-    nav {
-        display: flex;
-        /* Ensure the nav itself is a flex container */
-        justify-content: flex-end;
-        /* Align items to the right */
-    }
+/* Styles for Expanded View */  
+@media (min-width: 601px) {  
+    nav {  
+        display: flex;  
+        /* Ensure the nav itself is a flex container */  
+        justify-content: flex-end;  
+        /* Align items to the right */  
+        padding-right: 20px; /* Indent from the right */  
+    }  
 
-    nav ul {
-        display: flex;
-        /* Always display flex on larger screens */
-        flex-direction: row;
-        /* Ensure items are in a row */
-        background-color: purple;
-        width: auto;
-        /* Use auto width for nav */
-        padding: 0;
-        /* Remove extra padding around the ul */
-        margin: 0;
-        /* Remove margin */
-    }
+    nav ul {  
+        display: flex;  
+        /* Always display flex on larger screens */  
+        flex-direction: row;  
+        /* Ensure items are in a row */  
+        background-color: purple;  
+        width: auto;  
+        /* Use auto width for nav */  
+        padding: 0;  
+        /* Remove extra padding around the ul */  
+        margin: 0;  
+        /* Remove margin */  
+        gap: 15px; /* Space between items */  
+    }  
 
-    nav li {
-        margin: 0 15px;
-        /* Space between horizontal links */
-    }
+    nav li {  
+        /* Removed margin here to use gap instead */  
+    }  
 
-    /* General Styles */
-    nav a {
-        color: white;
-        /* Add link color for better accessibility */
-        text-decoration: none;
-        /* Remove underline from links */
-        padding: 1rem;
-        /* Add padding for better spacing within links */
-        display: block;
-        /* Make the entire link area clickable */
-    }
+    /* General Styles */  
+    nav a {  
+        color: white;  
+        /* Add link color for better accessibility */  
+        text-decoration: none;  
+        /* Remove underline from links */  
+        padding: 1rem;  
+        /* Add padding for better spacing within links */  
+        display: block;  
+        /* Make the entire link area clickable */  
+    }  
 
-    nav a:hover {
-        text-decoration: underline;
-        /* Underline on hover to indicate clickable */
-        background-color: black;
-        /* Light background when hovered */
-    }
+    nav a:hover {  
+        text-decoration: underline;  
+        /* Underline on hover to indicate clickable */  
+        background-color: black;  
+        /* Light background when hovered */  
+    }  
 }
