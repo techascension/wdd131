@@ -1,0 +1,72 @@
+/* Media Queries */
+@media (max-width: 600px) {
+    h1 {
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        /* Hide the nav on mobile by default */
+    }
+
+    #hamburger {
+        display: block;
+        /* Show hamburger icon on mobile */
+    }
+
+    /* Show the nav when the hamburger menu is active */
+    nav ul.show {
+        display: flex;
+        /* Show the nav links when hamburger is clicked */
+        flex-direction: column;
+        /* Stack links vertically */
+        width: 100%;
+        /* Full width for the dropdown */
+        background-color: purple;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        /* Space between vertical links */
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Change to 1 column on mobile */
+    }
+}
+
+/* Styles for Expanded View */
+@media (min-width: 601px) {
+    nav ul {
+        display: flex;
+        /* Always display flex on larger screens */
+        flex-direction: row;
+        /* Ensure items are in a row */
+        background-color: purple;
+        width: 100%;
+        /* Use full width for the navbar */
+    }
+
+
+    /* General Styles */
+    nav a {
+        flex: 1 1 100%;
+        /* Allow links to grow in the nav on larger screens */
+        color: white;
+        /* Add link color for better accessibility */
+        text-decoration: none;
+        /* Remove underline from links */
+        padding: 1rem;
+        /* Add padding for better spacing within links */
+        display: block;
+        /* Make the entire link area clickable */
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        /* Underline on hover to indicate clickable */
+        background-color: black;
+        /* Light background when hovered */
+    }
