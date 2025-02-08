@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}   
+
+header, footer {
+    color: white;
+    background-color: purple;
+    padding: 20px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    display: block;
+}
+
+#close {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(25, 25, 117);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 150px;
+    z-index: 1000;
+}
+
+#menu.visible {
+    display: flex;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {  
+    background-color: #000000; /* Light black highlight on hover */  
+    color: #eeff00; /* Change text color on hover */  
+    font-weight: 700; /* Make text bold on hover */  
+}  
+
+nav a:hover {
+    background-color:black;
+    color: yellow;
+}
+
+#close {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.res-grid section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out
+}
+
+.res-grid section:hover {
+    transform: scale(1.05);
+}
+
+.res-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 599px) {
+    #hamburger {
+        display: block !important;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #close {
+        display: block !important;
+    }
+
+}
+
+@media (min-width: 600px) {
+    
+    
+    #hamburger {
+        display: block;
+    }
+
+
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #close {
+        display: none;
+    }
+
+    #menu.visible #close {
+        display: block;
+    }
+}
+
+main {
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+footer div {
+    margin: 5px 0;
+    visibility: visible;
+    display: block;
+}
+
+
+
+
+
