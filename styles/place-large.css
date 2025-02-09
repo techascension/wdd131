@@ -142,6 +142,11 @@ footer p {
         height: auto;
     }
 
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
     .hero-content {
         position: absolute;
         top: 10%;
